@@ -6,7 +6,7 @@ export default function Hero() {
     const { ref, inView } = useFadeIn();
 
     return (
-        <div className="hero" ref={ref}>
+        <div className="hero" ref={ref} id="hero">
             <div className="container mobile">
                 <div className={`hero-text ${inView ? 'fade-in-down' : ''}`}>
                     <h1 className="hero-title">This is a Must.</h1>

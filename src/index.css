@@ -22,9 +22,24 @@ html {
 
 
 
-input:focus, textarea:focus, a:focus {
-  outline: 4px solid rgba(73, 74, 32, 0.7); /* Outline mais grosso e cor suave */  
-  transition: all 0.1s ease; /* Para uma transição suave ao focar */
+ .navbar a:focus-visible, .footer a:focus-visible {
+  outline: 4px solid #FFFFF9; 
+  transition: all 0.1s ease; 
+ }
+
+.navbar.navbar.scrolled a:focus-visible {
+  outline: 4px solid rgba(73, 74, 32, 0.7); 
+  transition: all 0.1s ease; 
+}
+
+input:focus, textarea:focus, button:focus-visible {
+  outline: none; 
+  box-shadow: 0 0 0 4px rgba(73, 74, 32, 0.7); 
+  
+}
+
+a:focus {
+  outline: none;
 }
 
 .padding-top {
@@ -55,10 +70,10 @@ body {
   }
 }
 
-/* Classe que aplicará a animação */
+
 .fade-in-down {
   animation: fadeInDown 1000ms ease-out forwards;
-  opacity: 0; /* Garante que o elemento comece invisível */
+  opacity: 0; 
 }
 
 .container {
@@ -101,9 +116,6 @@ body {
 .menu-icon {
   display: none;
 }
-
-
-
 
 .nav-elements ul {
   display: flex;
@@ -480,6 +492,8 @@ h3 {
 
 
 /* TESTIMONIALS */
+/* Slider container */
+
 
 .testimonials {
   background-color: #FFFFF9;

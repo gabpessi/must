@@ -40,7 +40,7 @@ useEffect(() => {
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="container">
         <div className="logo">
-        <img className="logo-img" src={isScrolled ? logoalt : logo} alt="logo" />
+         <a href="hero"><img className="logo-img" src={isScrolled ? logoalt : logo} alt="logo" /> </a>
       </div>
 
       <div className={"menu-icon"} onClick={toggleNavItems}>
