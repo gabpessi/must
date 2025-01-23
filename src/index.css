@@ -470,11 +470,24 @@ h3 {
   
 }
 
+.social-item:hover, .footer div a p:hover {
+  font-weight: 600;
+}
+
+.footer div a p {
+  margin-top: 30px;
+}
+
+
+
+
+
 .footer a div {
   display: flex;
   text-align: center;
   gap: .5rem;
 }
+
 
 .footer a {
   text-decoration: none;
@@ -771,7 +784,7 @@ h3 {
     scale: 0.75;
   }
   
-  .testimonial-image, .benefits-svg {
+  .testimonial-image, .benefits-svg, .logo-img {
     scale: 1;
   }
 
