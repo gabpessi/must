@@ -48,13 +48,15 @@ a:focus {
 
 
 
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
   background-color: #FFFFF9;
-  color:#361306
+  color:#361306;
+  overflow-x: hidden;
   
   
 }
@@ -166,6 +168,7 @@ body {
 
 .hero-img {
   width: 43.6rem;
+  
 }
 
 .hero-content {
@@ -289,6 +292,7 @@ body {
   height: 34.3rem;
   object-fit: cover;
   border-radius: 15px;
+  box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -320,6 +324,7 @@ h2 {
   height: 38.6rem;
   object-fit: cover;
   border-radius: 15px;
+  box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.1);
 }
 
 .benefits-text {
@@ -328,6 +333,10 @@ h2 {
   grid-template-columns: 1fr 1fr;
   row-gap: 3rem;
   column-gap: 5rem;
+}
+
+.benefits h2 {
+  text-align: center;
 }
 
 .benefits-box {  
@@ -370,6 +379,7 @@ h3 {
   color: #FFFFF9;
   padding: 4rem 6rem;
   border-radius: 15px;
+  box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.1);
 }
 
 .contact-box div h2 {
@@ -416,13 +426,15 @@ h3 {
   border: none;
   padding-left: 1rem;
   font-family: inherit;
-  color:#361306
+  font-size: inherit;
+  color:#361306;
+  background-color: #f0f0f0;
 }
 
 .contact-box input:focus,  .contact-box textarea:focus {
   outline: 2px solid  #494a20;
   
-  background-color: #FFFFFF;
+  background-color: #FFFFF9;
 }
 
 .contact-info p {
@@ -491,9 +503,9 @@ h3 {
 }
 
 
-/* TESTIMONIALS */
-/* Slider container */
 
+
+/* TESTIMONIALS */
 
 .testimonials {
   background-color: #FFFFF9;
@@ -512,6 +524,7 @@ h3 {
   margin-top: 10rem;
   gap: 4rem;
   position: relative;
+  
   
 }
 
@@ -542,7 +555,7 @@ h3 {
   opacity: 0; /* Inicia como invisível */
   position: relative;
   transform: scale(0.9); /* Inicia menor */
-  transition: transform 0.5s ease, opacity 0.5s ease; /* Transição suave */
+  transition: transform 0.5s ease, opacity 0.5s ease !important; /* Transição suave */
 }
 
 .testimonial-card.prev,
@@ -591,19 +604,15 @@ h3 {
   background-color: #494a20; /* Cor de destaque */
 }
 
-@media (max-width: 60rem) {
-  html {
-    font-size: 50%;
-  }
 
+
+@media (max-width: 60rem) {
   .btn-1, .btn-2 {
     height: 4.5rem;
     width: 16rem;
   }
- 
-}
 
-@media (max-width: 48rem) {
+  
 
   .menu-icon {
     display: block;
@@ -621,16 +630,16 @@ h3 {
     background-color: #494a20;
   
     height: calc(100vh - 6rem);
-    width: 0; /* Inicialmente escondido */
+    width: 0; 
     overflow: hidden;
     transition: all 0.3s ease-in;
-    z-index: -1; /* Garante que não atrapalhe elementos visíveis */
+    z-index: -1; 
   }
   
   
   .nav-elements.active {
-    width: 100%; /* Mostra o menu quando ativo */
-    z-index: 3; /* Ajusta o z-index para trazê-lo à frente */
+    width: 100%; 
+    z-index: 3; 
     
   }
 
@@ -702,17 +711,81 @@ h3 {
     grid-template-columns: 1fr 1fr;
   }
 
+  .loja-img {
+    width: 40.5rem;
+    
+  }
   
-  
-}
 
-@media (max-width: 26rem) {
-  html {
-    font-size: 40%;
+  .contact-box {
+    padding: 4rem ;
+  }
+  
+  .contact-box img {
+    width: 30rem 
   }
   
   .btn-1, .btn-2 {
     font-size: 1.6rem;
   }
   
+  .contact-image {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
 }
+
+
+@media (max-width: 30rem) {
+  
+  .hero-title {
+    line-height: 1;
+    padding-bottom: 2rem;
+  }
+  
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 2rem ;
+  }
+
+  .gap {
+    gap: 0;
+  }
+
+
+  .metrics, .hero-text, .width-600, .testimonials-header {
+    padding: 0;
+  }
+
+  .about-us, .benefits {
+    padding-top: 5rem;
+  }
+
+  img {
+    scale: 0.75;
+  }
+  
+  .testimonial-image, .benefits-svg {
+    scale: 1;
+  }
+
+  .testimonial-card.current {
+    transform: scale(1);
+  }
+
+  .footer .container {
+    gap: 8rem ;
+  }
+
+  .must-cups {
+    margin: 0;
+    
+  }
+}
+

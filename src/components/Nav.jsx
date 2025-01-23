@@ -46,7 +46,6 @@ useEffect(() => {
       <div className={"menu-icon"} onClick={toggleNavItems}>
         <img src={isScrolled ? menualt : menu} alt="menu" />
       </div>
-      {/* Classes dinâmicas baseadas no estado */}
       <div className={`nav-elements ${showNav ? "active" : ""}`}>
         <ul>
           <li>

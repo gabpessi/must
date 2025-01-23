@@ -9,6 +9,7 @@ import Benefits from './components/Benefits.jsx'
 import Testimonials from './components/Testimonials.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import Slider from './components/slider.jsx'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Benefits /> 
       <Testimonials />     
       <Contact />
+  
       <Footer />
     </BrowserRouter>
     
