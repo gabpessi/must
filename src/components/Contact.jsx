@@ -16,7 +16,7 @@ const TextArea = ({ label, name, required = true }) => (
 );
 
 export default function Contact() {
-    // Definindo os refs para cada parte do conteúdo
+
     const { ref: refH2, inView: inViewH2 } = useFadeIn();
     const { ref: refP, inView: inViewP } = useFadeIn();
     const { ref: refImg, inView: inViewImg } = useFadeIn();
@@ -26,7 +26,6 @@ export default function Contact() {
         <div className="contact padding-top" id='contact'>
             <div className="container">
                 <div className="contact-box">
-                    {/* Título e descrição com animação */}
                     <div className="contact-header">
                         <h2 className={`${inViewH2 ? 'fade-in-down' : ''}`} ref={refH2}>
                             Tem interesse em saber mais sobre como se tornar um franqueado Must? Estamos aqui para ajudar!
@@ -36,7 +35,6 @@ export default function Contact() {
                         </p>
                     </div>
 
-                    {/* Imagem e formulário com animação */}
                     <div className="contact-img-txt mobile">
                         <div
                             className={`contact-image ${inViewImg ? 'fade-in-down' : ''}`}

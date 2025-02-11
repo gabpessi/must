@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import { BrowserRouter } from 'react-router-dom'
-import './App.css'
 import Nav from './components/Nav.jsx'
 import Hero from './components/Hero.jsx'
 import Metrics from './components/Metrics.jsx'
@@ -13,7 +11,7 @@ import Footer from './components/Footer.jsx'
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Nav />
       <Hero />
       <Metrics />
@@ -22,7 +20,7 @@ function App() {
       <Testimonials />     
       <Contact />  
       <Footer />
-    </BrowserRouter>
+    </>
     
   );
 }

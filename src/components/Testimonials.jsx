@@ -34,21 +34,21 @@ export default function Testimonials() {
   const { ref: refP, inView: inViewP } = useFadeIn();
 
   const handleTouchStart = (e) => {
-    startX.current = e.touches[0].clientX; // Pega a posição inicial do toque
+    startX.current = e.touches[0].clientX;
   };
 
   const handleTouchMove = (e) => {
-    endX.current = e.touches[0].clientX; // Atualiza a posição durante o movimento
+    endX.current = e.touches[0].clientX;
   };
 
   const handleTouchEnd = () => {
-    const deltaX = endX.current - startX.current; // Calcula a diferença entre o início e o fim do toque
+    const deltaX = endX.current - startX.current;
 
     if (deltaX > 50) {
-      // Movimento para a direita (swipe para a esquerda)
+      // (swipe para a esquerda)
       prevTestimonial();
     } else if (deltaX < -50) {
-      // Movimento para a esquerda (swipe para a direita)
+      // (swipe para a direita)
       nextTestimonial();
     }
   };

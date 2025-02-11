@@ -101,8 +101,8 @@ body {
 }
 
 .navbar.scrolled {
-  background-color: #FFFFF9; /* Cor quando a página é rolada */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+  background-color: #FFFFF9; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   
 }
 
@@ -155,8 +155,6 @@ body {
   height: 0.2rem;
  
 }
-
-
 
 
 /* HERO */
@@ -240,7 +238,6 @@ body {
   transform: translate(-60%, -70%);
   width: 100%;
   max-width: 70rem;
-   /* Deixa o cometa mais sutil */
   z-index: 1;
 }
 
@@ -249,7 +246,7 @@ body {
   justify-content: space-around;
   gap: 5rem;
   position: relative;
-  z-index: 2; /* Coloca os textos acima da imagem do cometa */
+  z-index: 2;
   
 }
 
@@ -272,9 +269,6 @@ body {
   text-align: start;
   line-height: 0.9;
 }
-
-/* Responsividade para dispositivos móveis */
-
 
 /* SOBRE NÓS */
 
@@ -478,10 +472,6 @@ h3 {
   margin-top: 30px;
 }
 
-
-
-
-
 .footer a div {
   display: flex;
   text-align: center;
@@ -495,18 +485,14 @@ h3 {
   
 }
 
-
-
 .footer .container div {
   max-width: 13rem; 
-  
   
 }
 
 
 .footer .container {
   align-items: start;
-  
   gap: 10rem;
 }
 
@@ -514,9 +500,6 @@ h3 {
   fill: #FFFFF9;
   width: 1.2rem;
 }
-
-
-
 
 /* TESTIMONIALS */
 
@@ -530,33 +513,27 @@ h3 {
   padding-bottom: 5rem;
 }
 
-
 .testimonial-slider {
   display: flex;
   justify-content: center;
   margin-top: 10rem;
   gap: 4rem;
   position: relative;
-  
-  
 }
 
 .testimonial-card h4 {
   font-size: 1.6rem;
   font-weight: 500;
   padding-bottom: 2rem;
- 
 }
 
 .testimonial-card h4, .testimonial-card p {
   color: #FFFFF9;
-  
 }
 
 .testimonial-card p { 
   line-height: 1.4;
 }
-
 
 .testimonial-card {
   background: #494a20;
@@ -565,21 +542,20 @@ h3 {
   width: 30rem;
   height: 40rem;
   box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.1);
-  opacity: 0; /* Inicia como invisível */
+  opacity: 0;
   position: relative;
-  transform: scale(0.9); /* Inicia menor */
-  transition: transform 0.5s ease, opacity 0.5s ease !important; /* Transição suave */
+  transform: scale(0.9); 
 }
 
 .testimonial-card.prev,
 .testimonial-card.next {
-  transform: scale(0.95); /* Reduz o tamanho */
-  opacity: 0.6; /* Menos visível */
+  transform: scale(0.95);
+  opacity: 0.6;
 }
 
 .testimonial-card.current {
-  transform: scale(1.1); /* Destaque no card atual */
-  opacity: 1; /* Torna visível */
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .testimonial-image {
@@ -589,14 +565,11 @@ h3 {
  
   position: absolute;
   border-radius: 50%;
-  top: -4rem; /* Move a imagem 10rem do topo do card */
-  left: 50%; /* Centraliza horizontalmente */
-   /* Corrige o deslocamento horizontal */
-  transform: translateX(-50%); /* Corrige o deslocamento horizontal */
+  top: -4rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-
-/* Bolinhas de navegação */
 .slider-controls {
   display: flex;
   justify-content: center;
@@ -614,7 +587,7 @@ h3 {
 }
 
 .dot.active {
-  background-color: #494a20; /* Cor de destaque */
+  background-color: #494a20;
 }
 
 
@@ -623,9 +596,7 @@ h3 {
   .btn-1, .btn-2 {
     height: 4.5rem;
     width: 16rem;
-  }
-
-  
+  }  
 
   .menu-icon {
     display: block;
@@ -641,7 +612,6 @@ h3 {
     right: 0;
     top: 6rem;
     background-color: #494a20;
-  
     height: calc(100vh - 6rem);
     width: 0; 
     overflow: hidden;
@@ -671,8 +641,7 @@ h3 {
   }
 
   .nav-elements ul li {
-    margin: 0 !important; 
-    
+    margin: 0 !important;   
   }  
 
   .mobile {
@@ -706,13 +675,13 @@ h3 {
   }
 
   .testimonial-card {
-    display: none; /* Inicialmente, todos os cards estão ocultos */
+    display: none;
   }
   
   .testimonial-card.current {
-    display: block; /* Apenas o card atual é exibido */
-    transform: scale(1.1); /* Destaque no card atual */
-    opacity: 1; /* Torna visível */
+    display: block;
+    transform: scale(1.1);
+    opacity: 1;
   }
 
   .contact-img-txt img {
@@ -726,10 +695,8 @@ h3 {
 
   .loja-img {
     width: 40.5rem;
-    
   }
   
-
   .contact-box {
     padding: 4rem ;
   }
@@ -746,7 +713,6 @@ h3 {
     display: flex;
     justify-content: center;
   }
-  
   
 }
 
@@ -798,7 +764,6 @@ h3 {
 
   .must-cups {
     margin: 0;
-    
   }
 }
 

@@ -3,7 +3,6 @@ import useFadeIn from '../hooks/useFadeIn';
 
 export default function AboutUs() {
 
-    // Definindo os refs para cada parte do conteúdo
     const { ref: refH2, inView: inViewH2 } = useFadeIn();
     const { ref: refP1, inView: inViewP1 } = useFadeIn();
     const { ref: refP2, inView: inViewP2 } = useFadeIn();
