@@ -13,4 +13,4 @@ Must é uma landing page projetada para promover uma empresa fictícia. Criada c
 - Layout otimizado para conversões com uma Call-to-Action clara.
 
 ## Domínio
-- O site está disponível através da url: thishttps://thisisamust.netlify.app/
+- O site está disponível através da url: https://thisisamust.netlify.app/
